@@ -63,3 +63,7 @@ form input.equal {
  background-color: black;
  padding: 4px;   
 }
+
+.artisor {
+    display: inline-flex;
+}
