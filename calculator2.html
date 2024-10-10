@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+ <link rel="stylesheet" href="calculator2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator" id="colordiv">
+            <form >
+                <div class="display">
+                    <input type="text" id="display" name="display" disabled>
+
+                </div>
+                <div>
+                    <input type="button" class="btn" class="btn" value="AC" data-clear>
+                    <input type="button" class="btn" value="DE" data-delete  >
+                    <input type="button" class="btn" value="." onclick="special('.')">
+                    <input type="button" class="btn" value="/" onclick="special('/')" >
+                </div>
+                <div>
+                    <input type="button" class="btn" value="7" onclick="append('7')" >
+                    <input type="button" class="btn" value="8" onclick="append('8')" >
+                    <input type="button" class="btn" value="9" onclick="append('9')" >
+                    <input type="button" class="btn" value="*" onclick="special('*')" >
+                </div>
+                <div>
+                    <input type="button" class="btn" value="4"  onclick="append('4')">
+                    <input type="button" class="btn" value="5"  onclick="append('5')">
+                    <input type="button" class="btn" value="6"  onclick="append('6')">
+                    <input type="button" class="btn"value="-" onclick="special('-')" >
+                </div>
+                <div>
+                    <input type="button" class="btn" value="1" onclick="append('1')" >
+                    <input type="button" class="btn" value="2" onclick="append('2')">
+                    <input type="button" class="btn" value="3" onclick="append('3')">
+                    <input type="button" class="btn" value="+" onclick="special('+')">
+                </div>
+                <div>+
+                    <input type="button" class="btn" value="00"  onclick="special('00')">
+                    <input type="button" class="btn" value="0" onclick="special('0')">
+                    <input type="button" class="btn" value="%" onclick="special('%')">
+                    <input type="button" class="btn" value="=" onclick="display.value = eval(display.value)" >
+                </div>
+            </form>
+        </div>
+    </div>
+
+    ihihiij
+<script src="calculator2.js"></script>
+</body>
+</html>
